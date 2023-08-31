@@ -13,6 +13,7 @@ namespace generateur_mdp
             int longueur_mdp = outils.DemanderNombrePositifNonNul("Quelle est la longueur du mot de passe ? ");
             Console.WriteLine(longueur_mdp);
 
+            //Liste des alphabets
             string minuscules = "abcdefghijklmnopqrstuvwxz";
             string majuscules = minuscules.ToUpper();
             string chiffres = "0123456789";
@@ -23,7 +24,7 @@ namespace generateur_mdp
             string alphabet4 = alphabet3 + caractereSpec;
             Console.WriteLine();
 
-
+            //Liste des choix possibles d'un genre de mot de passe
             Console.WriteLine("Vous voulez un mot de passe avec :");
             Console.WriteLine("1 - Uniquement des caractères en minuscule");
             Console.WriteLine("2 - Des caractères minuscules et majuscules");
